@@ -1,0 +1,10 @@
+name 'diff-info-service'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures diff-info-service'
+long_description 'Installs/Configures diff-info-service'
+version '0.1.5'
+
+depends 'apt', '~> 2.9.2'
+depends 'docker', '~> 2.0'
