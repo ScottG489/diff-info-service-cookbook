@@ -1,7 +1,7 @@
 ---
 driver:
   name: docker
-  #use_sudo: false
+  use_sudo: false
   privileged: true
 
 #provisioner:
