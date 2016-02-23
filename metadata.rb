@@ -8,3 +8,5 @@ version '0.1.5'
 
 depends 'apt', '~> 2.9.2'
 depends 'docker', '~> 2.0'
+depends 'java', '~> 1.39.0'
+depends 'poise-service', '~> 1.1.1'
