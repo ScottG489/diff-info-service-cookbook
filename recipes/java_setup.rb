@@ -18,5 +18,5 @@ end
 #end
 
 execute 'runit' do
-  command 'java -jar /opt/diff-info-service.jar &'
+  command 'java -jar /opt/diff-info-service.jar server &'
 end
