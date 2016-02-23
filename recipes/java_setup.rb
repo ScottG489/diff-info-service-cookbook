@@ -16,7 +16,3 @@ poise_service 'diff-info-service' do
   command 'java -jar diff-info-service.jar server'
   directory '/opt/diff-info-service'
 end
-
-#execute 'runit' do
-#  command 'java -jar /opt/diff-info-service.jar server &'
-#end
