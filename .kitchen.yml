@@ -4,8 +4,12 @@ driver:
   use_sudo: false
   privileged: true
 
-#provisioner:
-#  -  name: chef_zero
+provisioner:
+  name: chef_zero
+  attributes:
+    poise-service:
+      provider: dummy
+
 
 # Uncomment the following verifier to leverage Inspec instead of Busser (the
 # default verifier)
