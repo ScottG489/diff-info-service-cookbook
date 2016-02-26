@@ -24,3 +24,13 @@ describe command('curl localhost:8080') do
   its(:stdout) { should eq '{"code":404,"message":"HTTP 404 Not Found"}' }
   its(:exit_status) { should eq 0 }
 end
+
+describe command('curl localhost:8080/foo') do
+  its(:stdout) { should eq '{"code":404,"message":"HTTP 404 Not Found"}' }
+  its(:exit_status) { should eq 0 }
+end
+
+describe command('curl localhost:8080/info') do
+  its(:stdout) { should match /{"code":500,"message":"There was an error processing your request. It has been logged \(ID [a-f0-9]{16}\)."}/ }
+  its(:exit_status) { should eq 0 }
+end
