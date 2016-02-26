@@ -9,6 +9,8 @@ provisioner:
   attributes:
     poise-service:
       provider: dummy
+    diff-info-service:
+      CI: "<%= ENV['CI'] %>"
 
 
 # Uncomment the following verifier to leverage Inspec instead of Busser (the
