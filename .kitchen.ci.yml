@@ -1,6 +1,7 @@
 ---
 driver:
   name: docker
+  use_sudo: true
   privileged: true
 
 provisioner:
