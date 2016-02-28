@@ -8,14 +8,7 @@
 # TODO:         I'm going to forego this and just work with the jar directly.
 
 
-#docker_service 'default'
-
-docker_installation 'default' do
-  action :create
-end
-docker_service_manager_execute 'default' do
-  action :start
-end
+docker_service 'default'
 
 docker_image 'diff-info-service' do
   repo 'scottg489/diff-info-service'
