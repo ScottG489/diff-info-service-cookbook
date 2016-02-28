@@ -1,0 +1,24 @@
+---
+driver:
+  name: docker
+  privileged: true
+
+provisioner:
+  name: chef_zero
+  attributes:
+    poise-service:
+      provider: dummy
+
+# Uncomment the following verifier to leverage Inspec instead of Busser (the
+# default verifier)
+# verifier:
+#   name: inspec
+
+platforms:
+  - name: ubuntu-15.10
+
+suites:
+  - name: ci
+    run_list:
+      - recipe[diff-info-service::java_setup]
+    attributes:
