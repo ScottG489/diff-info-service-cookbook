@@ -1,17 +1,9 @@
 ---
 driver:
-  name: docker
-  use_sudo: false
-  privileged: true
+  name: vagrant
 
 provisioner:
   name: chef_zero
-  attributes:
-    poise-service:
-      provider: dummy
-    diff-info-service:
-      CI: "<%= ENV['CI'] %>"
-
 
 # Uncomment the following verifier to leverage Inspec instead of Busser (the
 # default verifier)
@@ -19,7 +11,7 @@ provisioner:
 #   name: inspec
 
 platforms:
-  - name: ubuntu-15.10
+  - name: ubuntu-15.04
 
 suites:
   - name: default
