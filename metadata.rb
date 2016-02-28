@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures diff-info-service'
 long_description 'Installs/Configures diff-info-service'
-version '0.1.6'
+version '0.1.7'
 
 depends 'apt', '~> 2.9.2'
 depends 'docker', '~> 2.0'
