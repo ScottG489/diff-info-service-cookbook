@@ -1,6 +1,8 @@
 name 'diff-info-service'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
+source_url 'https://github.com/ScottG489/diff-info-service-cookbook'
+issues_url 'https://github.com/ScottG489/diff-info-service-cookbook/issues'
 license 'all_rights'
 description 'Installs/Configures diff-info-service'
 long_description 'Installs/Configures diff-info-service'
